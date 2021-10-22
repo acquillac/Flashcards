@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+label{
+  font-size: 1.5rem;
+  padding: 3px; 
+  color: #fff;
+}
+
+textarea{
+  font-size: 1.5rem; 
+  padding: 3px;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+
+
+/* buttons */
+.question-btn,
+.save{
+  display: block;
+  width: 1;
+  margin: 1rem;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+} 
+
+
+/* question feilds */
+.question-container,
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  min-height: 50vh;
+  background: rgb(170, 170, 170);
+}
+
+.question-form{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  min-width: 400px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+.flash-card{display: none;}
