@@ -92,12 +92,3 @@ document.querySelector('.save').addEventListener('click', () => {
   }
 
 })
-
-// // deleteing a card
-// document.querySelector('.flash-card').addEventListener('click', (e) => {
-
-//   const ui = new UI();
-
-  
-//   console.log('test 1')
-// })
