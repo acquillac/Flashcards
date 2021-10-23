@@ -69,6 +69,11 @@ textarea:focus{
   border-radius: 5px;
 }
 
+.error{
+  color: red;
+  display: none;
+}
+
 /* flash cards */
 .flashcards{
   display: grid;
