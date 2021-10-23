@@ -1,17 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Zen+Old+Mincho&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Zen Old Mincho', serif;
 }
-
-body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+ 
 label{
   font-size: 1.5rem;
   padding: 3px; 
-  color: #fff;
+  color: lightseagreen;
 }
 
 textarea{
@@ -23,17 +22,27 @@ textarea:focus{
   outline: none;
 }
 
-
 /* buttons */
 .question-btn,
-.save{
+.save,
+.delete-card{
   display: block;
   width: 1;
   margin: 1rem;
   padding: 5px 15px;
   font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 } 
 
+.question-btn:hover,
+.save:hover{
+  background-color: lightgreen;
+}
+
+.delete-card:hover{
+  background-color: lightcoral;
+}
 
 /* question feilds */
 .question-container,
@@ -46,7 +55,6 @@ textarea:focus{
 
 .container{
   min-height: 50vh;
-  background: rgb(170, 170, 170);
 }
 
 .question-form{
@@ -54,7 +62,7 @@ textarea:focus{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #444;
+  background-color: rgb(234, 247, 255);
   min-width: 400px;
   padding: 1rem;
   margin: 1rem;
@@ -76,6 +84,23 @@ textarea:focus{
   align-items: center;
   padding: 5px;
   border-radius: 5px;
+}
+
+.flash-card h3,
+.flash-card a,
+.flash-card p,
+.flash-card button{
+  margin: 1rem;
+}
+
+.flash-card a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: lightseagreen;
+}
+
+.flash-card p{
+  font-size: 1.3rem;
 }
 
 .answer{
