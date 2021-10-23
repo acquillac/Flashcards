@@ -12,12 +12,8 @@ class UI{
 
   addNewCard(flashcard){
 
-    console.log(flashcard.question)
-    console.log(flashcard.answer)
-
     const flashcards = document.querySelector('.flashcards');
-    
-
+ 
     let output = `
     <div class="flash-card">
       <h3 class="display-question">${flashcard.question}</h3>
@@ -67,10 +63,6 @@ class UI{
       3000)
 
   }
-
-  deleteCard(e){
-    console.log('test')
-  }
 }
 
 // adding a card
@@ -78,7 +70,6 @@ document.querySelector('.save').addEventListener('click', () => {
   
   const question = document.querySelector('.input-question').value
         answer = document.querySelector('.input-answer').value
-        
         
   const flashcard = new NewFlashCard(question, answer);
 
@@ -90,5 +81,4 @@ document.querySelector('.save').addEventListener('click', () => {
   else{
     ui.addNewCard(flashcard);
   }
-
 })
